@@ -1,0 +1,20 @@
+<div class="container row">
+  <button mat-raised-button color="warn" (click)="fileInput.click()">
+    <mat-icon>library_add</mat-icon>
+    <span>Adicionar Imagem e analisar</span>
+    <input #fileInput type="file" (change)="onFileInput($event.target.files[0])" accept="image/jpeg, .jpeg, image/png, .png, image/pjpeg, .jpg"
+      hidden />
+  </button>
+</div>
+<div class="container row" *ngIf="imageName !== ''">
+  <span><b>Imagem a ser adicionada:</b> {{ imageName }}</span>
+  <button style="margin-left: 1rem;" mat-raised-button color="primary" (click)="sendImage()">
+    <mat-icon>cloud_upload</mat-icon>
+    <span style="margin-left: 1rem;">Enviar</span>
+  </button>
+</div>
+
+
+<section class="container">
+  <app-image-viewer *ngFor="let img of images" [img]="img"></app-image-viewer>
+</section>
