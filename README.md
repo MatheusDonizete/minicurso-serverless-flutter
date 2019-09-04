@@ -57,3 +57,7 @@ O curso é introdutório, sendo assim é necessário se aprofundar mais nos conc
 Agradeço a participação de todos!
 
 Para maiores dúvidas e sugestões estou a diposição no e-mail: math.d@live.com
+
+Slides disponíveis em [slides.com](https://slides.com/matheusdonizete/deck-10-12-16)
+
+Aplicação Flutter de exemplo em: [github.com/jhionan](https://github.com/jhionan/minicuro-flutter)
